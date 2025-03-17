@@ -18,8 +18,7 @@ function SetCamera() {
 }
 
 function RingModel() {
-    const { scene } = useGLTF(process.env.REACT_APP_GLTF_MODEL_PATH);
-
+    const { scene } = useGLTF('/public/anelFinal4.glb');
     const groupRef = useRef();
 
     // Garantir que a rotação aconteça em torno do centro do objeto sem translação
